@@ -1,5 +1,5 @@
 async function getFirebaseDataon() {
-    await firebase.database().ref('Tank_Data/1-set').on('value', function(data) { //for every object each time it is run
+    await firebase.database().ref('Tank_Data').on('value', function(data) { //for every object each time it is run
         tank_level = data.val()['Level']
         console.log(tank_level)
 
