@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #6FD8E2;
+    text-shadow: 1 0 2 #000000;
     /* Background pic from https://www.freepik.com/ */
 }
 
@@ -17,8 +18,9 @@ body {
     text-align: center;
 }
 
-#waterLevelChart {
-    margin-top: 100px;
+#waterLevelChart,
+h1 {
+    margin-top: 50px;
 }
 
 .btn,
