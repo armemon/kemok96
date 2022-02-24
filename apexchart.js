@@ -65,7 +65,7 @@ setInterval(() => {
             data: [tank_level]
         }])
     }
-}, 50);
+}, 500);
 
 function tankfull() {
     tank_level = 90;
