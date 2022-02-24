@@ -1,18 +1,7 @@
-async function getFirebaseDataon() {
-    await firebase.database().ref('Tank_Data').on('value', function(data) { //for every object each time it is run
-        tank_level = data.val()['Level']
-        console.log(tank_level)
-
-
-        chart.updateSeries([{
-            data: [tank_level]
-        }])
-    })
-}
-getFirebaseDataon()
-
 var options = {
-    series: [],
+    series: [{
+        data: [90]
+    }],
     noData: {
         align: 'center',
         verticalAlign: 'top',
@@ -57,3 +46,30 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#waterLevelChart"), options);
 chart.render();
+
+var tank_level = 90
+setInterval(() => {
+    if (document.getElementById("motoron").checked && tank_level >= 1) {
+        // setInterval(() => {
+        //     if (tank_level > 0) {
+        tank_level -= 1
+
+        if (tank_level <= 0) {
+            tank_level = 0;
+            chart.updateSeries([{
+                data: [tank_level]
+            }])
+            alert("Tank Empty")
+        }
+        chart.updateSeries([{
+            data: [tank_level]
+        }])
+    }
+}, 50);
+
+function tankfull() {
+    tank_level = 90;
+    chart.updateSeries([{
+        data: [tank_level]
+    }])
+}
