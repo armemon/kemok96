@@ -1,0 +1,40 @@
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #6FD8E2;
+    /* Background pic from https://www.freepik.com/ */
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-size: 14in;
+        background-position: top;
+    }
+}
+
+.container {
+    text-align: center;
+}
+
+#waterLevelChart {
+    margin-top: 100px;
+}
+
+.btn,
+.btn:hover {
+    background-color: white !important;
+    border-color: #6FD8E2;
+    color: #6FD8E2;
+    margin: 10px;
+}
+
+.btn-check:active,
+.btn-check:checked+.btn-primary,
+.btn-check:focus {
+    color: #fff;
+    background-color: #6FD8E2 !important;
+    border-color: #6FD8E2 !important;
+    box-shadow: none;
+    font-weight: 800;
+}
