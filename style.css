@@ -27,7 +27,7 @@ h1 {
 .btn:hover {
     background-color: white !important;
     border-color: #6FD8E2;
-    color: #6FD8E2;
+    color: #6FD8E2 !important;
     margin: 10px;
 }
 
