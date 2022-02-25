@@ -34,8 +34,9 @@ h1 {
 .btn-check:active,
 .btn-check:checked+.btn-primary,
 .btn-check:focus,
-.btn :focus {
-    color: #fff;
+.btn:active,
+.btn:focus {
+    color: #fff !important;
     background-color: #6FD8E2 !important;
     border-color: #6FD8E2 !important;
     box-shadow: none !important;
