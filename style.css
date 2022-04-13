@@ -27,18 +27,16 @@ h1 {
 .btn:hover {
     background-color: white !important;
     border-color: #6FD8E2;
-    color: #6FD8E2 !important;
+    color: #6FD8E2;
     margin: 10px;
 }
 
 .btn-check:active,
 .btn-check:checked+.btn-primary,
-.btn-check:focus,
-.btn:active,
-.btn:focus {
-    color: #fff !important;
+.btn-check:focus {
+    color: #fff;
     background-color: #6FD8E2 !important;
     border-color: #6FD8E2 !important;
-    box-shadow: none !important;
+    box-shadow: none;
     font-weight: 800;
 }
